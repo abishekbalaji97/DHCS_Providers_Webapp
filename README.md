@@ -12,4 +12,4 @@ GRANT ALL PRIVILEGES ON dhcs_medical_programs.* TO 'abishekbalaji97'@'localhost'
 user  = username
 password = password
 
-## Issues that persist with this app and other developments planned are summarized with GitHub Issues
+## Issues that persist with this app and other components that are planned to be developed are summarized with GitHub Issues
