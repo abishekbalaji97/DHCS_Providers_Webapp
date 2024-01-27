@@ -1,4 +1,4 @@
--- Schema Creation. Run this command separately and then we can run all of the following commands at once after selecting the
+-- Schema Creation. Run this command separately, and then we can run all of the following commands at once after selecting the
 -- created schema, which will hold all of our tables
 CREATE SCHEMA dhcs_medical_programs;
 
@@ -37,7 +37,7 @@ VALUES
 (33,'Thoracic Surgery'),
 (34,'Urology and Urological Surgery');
 
- -- Creating the provider type lookup table with the required attributes and constraints
+ -- Creating the provider-type lookup table with the required attributes and constraints
 CREATE TABLE providers_type_lookup_table (
 
     FI_Provider_Type_CD INT,
@@ -285,7 +285,7 @@ INSERT INTO providers (NPI, Location_ID, Provider_Source, Fname, Lname) VALUES
 
 CREATE INDEX idx_providers_provider_source ON PROVIDERS(Provider_Source);
 
--- Creating the ffs providers table with the required attributes and constraints
+-- Creating the FFS providers table with the required attributes and constraints
 CREATE TABLE FFS_PROVIDERS (
     Provider_Source VARCHAR(255),
     NPI INT,
